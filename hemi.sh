@@ -169,6 +169,6 @@ show "PoP 마이닝이 성공적으로 시작되었습니다." "초록"
 
 echo -e "${Yellow}디스코드에서 faucet을 받아주세요: https://discord.com/invite/hemixyz ${NC}"
 echo -e "${Yellow}새지갑을 생신하셨다면 해당명령어를 입력하신 후 내용을 저장하세요: cat ~/popm-address.json ${NC}"
-echo -e "${GREEN}모든 작업이 완료되었습니다. 컨트롤+A+D로 스크린을 분리해주세요.${NC}"
 echo -e "${RED}다음 명령어로 로그를 확인하세요: sudo journalctl -u hemi.service -f -n 50 ${NC}"
+echo -e "${GREEN}모든 작업이 완료되었습니다. 컨트롤+A+D로 스크린을 분리해주세요.${NC}"
 echo -e "${GREEN}스크립트작성자-https://t.me/kjkresearch${NC}"
