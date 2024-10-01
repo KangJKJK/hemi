@@ -168,7 +168,7 @@ echo
 show "PoP 마이닝이 성공적으로 시작되었습니다." "초록"
 
 cat ~/popm-address.json
-read -p "위에 표시되는 내용을 따로 저장해두세요."
+read -p "위에 표시되는 내용을 따로 저장한 후 엔터를 눌러주세요."
 
 echo -e "${GREEN}모든 작업이 완료되었습니다. 컨트롤+A+D로 스크린을 분리해주세요.${NC}"
 echo -e "${RED}다음 명령어로 로그를 확인하세요: sudo journalctl -u hemi.service -f -n 50 ${NC}"
