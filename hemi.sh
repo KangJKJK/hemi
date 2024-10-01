@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# 로고 스크립트를 다운로드 및 실행
-curl -s https://raw.githubusercontent.com/zunxbt/logo/main/logo.sh | bash
-
-# 3초 대기
-sleep 3
-
 # 시스템 아키텍처 확인
 ARCH=$(uname -m)
 
