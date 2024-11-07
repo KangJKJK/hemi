@@ -145,12 +145,13 @@ fi
 # 새로운 hemi 서비스 파일 작성
 cat << EOF | sudo tee /etc/systemd/system/hemi.service > /dev/null
 [Unit]
-Description=Hemi Network popmd 서비스
+Description=Hemi Network popmd Service
 After=network.target
 
 [Service]
 WorkingDirectory=$(pwd)
 ExecStart=$(pwd)/popmd
+Environment="POPM_BFG_REQUEST_TIMEOUT=60s"
 Environment="POPM_BTC_PRIVKEY=$priv_key"
 Environment="POPM_STATIC_FEE=$static_fee"
 Environment="POPM_BFG_URL=wss://testnet.rpc.hemi.network/v1/ws/public"
@@ -162,6 +163,7 @@ EOF
 
 # systemd 데몬 재로드 및 서비스 시작
 sudo systemctl daemon-reload
+sleep 15
 sudo systemctl enable hemi.service
 sudo systemctl start hemi.service
 echo
