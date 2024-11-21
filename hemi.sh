@@ -167,6 +167,7 @@ sleep 15
 sudo systemctl enable hemi.service
 sudo systemctl start hemi.service
 echo
+show "해당사이트로 이동하여 프라이빗키를 등록하세요: https://pop-miner.hemi.xyz/manage" "초록"
 show "PoP 마이닝이 성공적으로 시작되었습니다." "초록"
 
 echo -e "${Yellow}디스코드에서 faucet을 받아주세요: https://discord.com/invite/hemixyz ${NC}"
